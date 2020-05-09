@@ -165,14 +165,14 @@ x_train_scaler = scaler.fit_transform(x_data_train)
 x_test_scaler = scaler.fit_transform(x_data_test)
 
 mlp = MLPClassifier(
-    hidden_layer_sizes=(3,),
-    max_iter=100,
-    alpha=0.1,
-    activation='logistic',
+    hidden_layer_sizes="""[HIDDEN LAYER]""",
+    max_iter="""[ITERASI]""",
+    alpha="""[NILAI ALPHA]""",
+    activation="""[FUNGSI AKTIVASI]""",
     verbose=True,
-    learning_rate_init = 0.1,
-    solver='adam',
-    random_state=42
+    learning_rate_init = """[LAJU BELAJAR]""",
+    solver="""[SOLVER]""",
+    random_state="""[RANDOM STATE]"""
 )
 
 mlp.fit(x_train_scaler, y_data_train)
