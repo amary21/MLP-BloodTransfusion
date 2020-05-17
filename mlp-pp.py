@@ -161,6 +161,15 @@ y_dataset = pd.concat(all_y_dataset)
 scaler = StandardScaler()
 print('\nData preprocessing with {scaler}\n'.format(scaler=scaler))
 
+criteria = ["kapasitas lahan sawah(jam/ha)", 
+            "kapasitaslahan kering(jam/ha)",
+            "tenaga rata-rata(N.m)","tenaga Maksimum(N.m)",
+            "Isi bahan bakar",
+            "berat","dimensi","harga"
+           ]
+
+
+
 x_train_scaler = scaler.fit_transform(x_data_train)
 x_test_scaler = scaler.fit_transform(x_data_test)
 
